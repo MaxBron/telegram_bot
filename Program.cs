@@ -85,7 +85,8 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
         text: "курс доллара 60",
         replyMarkup: replyKeyboardMarkup,
         cancellationToken: cancellationToken);
-    } 
+    }
+
 }
 
 Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
