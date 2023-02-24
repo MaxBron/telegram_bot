@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kiber\\source\\repos\\TelegramBot\\TelegramBot.csproj": {}
+    "C:\\telegram_bot\\TelegramBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiber\\source\\repos\\TelegramBot\\TelegramBot.csproj": {
+    "C:\\telegram_bot\\TelegramBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiber\\source\\repos\\TelegramBot\\TelegramBot.csproj",
+        "projectUniqueName": "C:\\telegram_bot\\TelegramBot.csproj",
         "projectName": "TelegramBot",
-        "projectPath": "C:\\Users\\kiber\\source\\repos\\TelegramBot\\TelegramBot.csproj",
+        "projectPath": "C:\\telegram_bot\\TelegramBot.csproj",
         "packagesPath": "C:\\Users\\kiber\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiber\\source\\repos\\TelegramBot\\obj\\",
+        "outputPath": "C:\\telegram_bot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kiber\\AppData\\Roaming\\NuGet\\NuGet.Config",

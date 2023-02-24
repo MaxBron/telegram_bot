@@ -17,6 +17,7 @@ string response;
 using (StreamReader sr = new StreamReader(webResponse.GetResponseStream()))
 response = sr.ReadToEnd();
 WeatherResponse? weather = JsonConvert.DeserializeObject<WeatherResponse>(response);
+
 ReceiverOptions receiverOptions = new()
 {
     AllowedUpdates = Array.Empty<UpdateType>() // receive all update types
@@ -33,8 +34,10 @@ var me = await botClient.GetMeAsync();
 Console.WriteLine($"Start listening for @{me.Username}");
 Console.ReadLine();
 cts.Cancel();
+
 async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
 {
+
     if (update.Message is not { } message)
     {
         return;
@@ -46,6 +49,7 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
     }
 
     var chatId = message.Chat.Id;
+
     ReplyKeyboardMarkup replyKeyboardMarkup = new(new[]
     {
         new KeyboardButton[] { "погода", "курс доллара" },
@@ -64,6 +68,7 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
 
     if (message.Text == "погода")
     {
+
         if (weather is not null)
         {
             Message sentMessage = await botClient.SendTextMessageAsync(
@@ -85,6 +90,7 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
 
 Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
 {
+
     var ErrorMessage = exception switch
     {
         ApiRequestException apiRequestException

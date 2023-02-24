@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5RUR2TaCFICNOvtHCYtb5vhtk0DDkggcnTclyyp9FmXgamxB+Y4srxWTpMs+Pr+Hi7Gh4mB/zheck1bDg56Xmw==",
+  "dgSpecHash": "e5hmJCo/Dqr1nRKh1Kns/XnEy8nGJ63tWEILLz6OPh1uqsUa9mTV+/F5ZYqaUhY62hjNhnEVIA0kEtyPbK7qYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kiber\\source\\repos\\TelegramBot\\TelegramBot.csproj",
+  "projectFilePath": "C:\\telegram_bot\\TelegramBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kiber\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\kiber\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
